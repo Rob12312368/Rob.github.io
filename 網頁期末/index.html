@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsao Ching's Web</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="webstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    
+   <nav class="nav navbar-inverse">
+       <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <div class="logo-image">
+                    <img src="./media//gorilla.jpg" class="img-fluid">
+                </div>
+            </a>
+            <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html" id="brand_name">NPNG.</a>
+            </div>
+                <ul class="nav navbar-nav " id="navbar_list">
+                    <li class="active"><a href="index.html"><span></span>Home</a></li>
+                    <li><a href="./chest.html">Chest Workout</a></li>
+                    <li><a href="./back.html">Back Workout</a></li>
+                    <li><a href="./legs.html">Legs Workout</a></li>
+                    <li><a href="./biceps.html">Biceps & Triceps  </a></li>
+                    <li><a href="./shoulder.html">Shoulder</a></li>
+                    <li><a href="./plan.html">Workout Plan</a></li>
+                </ul>
+        </div>
+    </nav>
+
+    <div class="ui-widget">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" id="my_input">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button" id="my_button">Go!</button>
+            </span>
+        </div>
+    </div>
+            
+
+    <div class="fly_in">
+        <div class="img_container">
+            <div class="index_image"><img src="./media/bench_press.jpg"></div>
+            <div class="top-left">
+                Wanna build a nice and decent chest?
+            </div>
+            <div class="img_button">
+                <button><a href="./chest.html">Check it Out!</a></button>
+            </div>
+
+        </div>
+        <div class="img_container">
+            <div class="index_image"><img src="./media/pulldown.jpg"></div>
+            <div class="top-left">
+            Looking for the best back workout?
+            </div>
+            <div class="img_button">
+                <button><a href="./back.html">Check it Out!</a></button>
+            </div>
+        </div>
+        <div class="img_container">
+            <div class="index_image"><img src="./media/squad.jpg"></div>
+            <div class="top-left">
+            Wanna have strong and muscular legs?
+            </div>
+            <div class="img_button">
+                <button><a href="./legs.html">Check it Out!</a></button>
+            </div>
+        </div>
+        <div class="img_container">
+            <div class="index_image"><img src="./media/bicep_tricep.jpg"></div>
+            <div class="top-left">
+            Hoping to get those 3D-looking arms?
+            </div>
+            <div class="img_button">
+                <button><a href="./biceps.html">Check it Out!</a></button>
+            </div>
+        </div>
+        <div class="img_container">
+            <div class="index_image"><img src="./media/shoulder.jpg"></div>
+            <div class="top-left">
+                Searching for the most efficient shoulder workout?
+            </div>
+            <div class="img_button">
+                <button><a href="./shoulder.html">Check it Out!</a></button>
+            </div>
+        </div>
+    </div>
+  
+    
+    
+    
+    
+
+    <script>
+        var type_in;
+        $(function(){
+            var hint=["Chest Workout","Back Workout","Legs Workout","Biceps & Triceps","Shoulder","Workout Plan"];
+            $('#my_input').autocomplete({
+            source:hint
+        });
+        });
+
+        $('#my_button').click(function () {
+            type_in=$('#my_input').val();
+            type_in=type_in.toLowerCase();
+            if(type_in=="chest workout")
+                type_in="chest";
+            else if(type_in=="back workout")
+                type_in="back";
+            else if(type_in=="legs workout")
+                type_in="legs";
+            else if(type_in=="biceps & triceps")
+                type_in="biceps";
+            else if(type_in=="workout plan")
+                type_in="plan";
+            window.location=type_in+".html";
+        });
+        
+    
+    </script>
+</body>
+</html>
