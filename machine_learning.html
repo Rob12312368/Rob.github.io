@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsao-Ching's Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="mycss.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div class="container">
+  <div class="row">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Tsao-Ching.html">
+        <img src="media/headshot.jpg" alt="" width="50" height="60" class="d-inline-block align-text-top">
+        Tsao Ching's Webpage
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="CV.html">CV</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="machine_learning.html">Machine Learning</a></li>
+              <li><a class="dropdown-item" href="網頁期末/index.html" target="_blank">Web Development</a></li>
+              <li><a class="dropdown-item" href="Unity.html">Unity</a></li>
+              <li><a class="dropdown-item" href="#">VBA</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Competition
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">NA</a></li>
+              <li><a class="dropdown-item" href="#">NA</a></li>
+              <li><a class="dropdown-item" href="#">NA</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
+  </div>
+
+
+
+  <div class="container-fluid">
+    <div class="row below">
+        <div class="col-md-12" id="customer">
+            <ul>
+                <li class="mytitle">Customer Classification</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <img src="media/customer_excel.PNG" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <b>Python Packages: </b>pandas, numpy, sklearn, matplotlib<br>
+            <b>Introduction:</b> Provided with 8 thousand rows of data composed of 13 features, the objective is to predict whether the customer will leave in the future.<br>
+            <b>Data Preprocessing:</b> After dropping outliers and unrelated features, such as Surname, RowNumber, and CustomerID, we find that this dataset is imbalanced. The ratio between
+            0 and 1 in column Exited is 8 to 2. Therefore, while splitting training set and testing set, we use stratification to ensure that characteristic is preserved.
+            Furthermore, we use oversampling to increase the amount of 1 in column Exited to prevent the model from biasing.<br>
+            <b>Model:</b> We have tried various models, from linear to non-linear, including Linear Regression, SVC, etc. We decide to use tree-based models at the end. In order
+            to enhance its performance, we ensemble XGboost, LGBM, and RandomForest. Bescause of this technique, our model is away from overfitting, and we won the first place in 
+            the in-class competition.
+        </div>
+        <div class="col-md-12" id="toxic">
+            <hr>
+            <ul>
+                <li class="mytitle">Toxic Comment</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <img src="media/toxic_comment.PNG" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <b>Python Packages: </b>pandas, numpy, sklearn, nltk<br>
+            <b>Introduction:</b> Provided with 14870 rows of data composed of only one feature, the objective is to classify comments into three categories, such as Hateful, Offensive, and Clean.<br>
+            <b>Data Preprocessing:</b> During the analysis, we find this dataset is also imbalanced. The proportion of Hateful, Offensive, and Clean comments are 77%, 17%, and 6%.
+            However, we do not use oversampling this time, since it is not easy to generate text data. Therefore, we simply extract text using regex. In order to get clean and useful data, we
+            delete stop words, including a, the, etc. After that, since we need to transform words into the same tense, we try Lemmatization and Stemming. It turns out that Lemmatization has better performance.<br>
+            <b>Model:</b> Due to limited time, we stick with what we has used previously, tree-based algorithm, and we do not use ensembling. After comparing the performance, we choose XGB as our algorithm. Despite the fact
+            that we do not use that technique, we still got the third place in the in-class competition.
+        </div>
+        <div class="col-md-12" id="house">
+            <hr>
+            <ul>
+                <li class="mytitle">House Price Prediction</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <img src="media/house_price.PNG" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <b>Python Packages: </b>pandas, numpy, sklearn<br>
+            <b>Introduction:</b> Provided with 1460 rows of data composed of nearly 80 feature, the objective is to predict the prices of houses. This is a data set from Kaggle, <a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview/evaluation" target="_blank">click here.</a><br>
+            <b>Data Preprocessing:</b>This project may be the most challenging one among these three. To make the data complete, we have done lots of work, since one fourth of the columns contain missing values. We need to decide
+            what kind of number should be filled in, such as mean, mode, or median, to make our data logical. After that, in order to decrese the time for model training and raise up the accuracy, we try to use some feature
+            engineering technique. Related methods involve correlation coefficient and tree-based feature selection. However, we decide to use all the features, for the result of 80 features turns out to be the best.<br>
+            <b>Model:</b> Because of the previous success, we choose to use ensembling again, and the algorithm includes LGBM, XGBoost, and RandomForest. We rank 741st in the contest of 5173 on Kaggle.
+        </div>
+        <div class="col-md-12">
+          <hr>
+          <ul>
+              <li class="mytitle">Arkanoid</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div class="ratio ratio-16x9">
+            <iframe src="media/20220202_192947.mp4" id="ark" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <b>Python Packages: </b>pandas, numpy, sklearn<br>
+          <b>Introduction: </b>This project is a lot different from the other three. We implement machine learning algorithms on the arkanoid game created by <a href="https://github.com/LanKuDot/MLGame">LanKuDot</a>, which includes 5 different levels.<br>
+          <b>Process:</b>First, we have to write code called the rule for passing every level in the game, and record position of the ball and the board along the process. This is the most demanding part in this project, since the rule needs to
+          deal with 5 different levels. After we have the data, we use it to make several features, such as speed and direction. With the features, we can finally train the model.<br>
+          <b>Rule1: </b>In every scene, I use the position of the ball now and of the previous ball to produce a linear equation to predict the intersection between the ball and the board, and move the board there to catch the ball. During the process, I must take
+          rebounds into consideration so that the board will not move in the wrong direction.<br>
+          <b>Rule2: </b>This time, I predict the intersection by multiplying the speed by time to count the distance, and add it to the previous position. I still have to take rebouns into consideration.<br>
+          <b>Model: </b>In this case, I think Knn may be a good choice, since whether to move right or left can be determined by similar data, and the result is satisfactory.
+        </div>
+        
+        
+
+    </div>
+  </div>
+
+
+
+
+
+
+</body>
+</html>

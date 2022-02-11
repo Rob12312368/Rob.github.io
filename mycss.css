@@ -1,0 +1,93 @@
+html{
+    scroll-behavior: smooth;
+}
+.navbar-brand{
+    font-size: 30pt;
+}
+#navbarSupportedContent{
+    font-size: 20pt;
+}
+.card-img-top{
+    height: 15vw;
+    object-fit: cover;
+}
+#arkanoid{
+    height: 15vw;
+}
+body{
+    background-color:white;
+}
+.mytitle{
+    font-size:50px;
+}
+
+#leftpart{
+    position: fixed;
+    left:0px;
+    bottom:0px;
+    z-index:-1;
+}
+#mailbox{
+    height:10%;
+    width:5%;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    z-index:99999;
+
+    max-width:100%;
+    height:auto;
+
+}
+#holland{
+    width:70%;
+    height:50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    max-width:100%;
+    height:auto;
+}
+.arkanoid{
+    position:relative;
+    height:10%;
+    
+}
+.below{
+    position: relative;
+    top:100px;
+}
+.card{
+    position: relative;
+    transition: top ease 0.1s;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.btn {
+    margin-top: auto;
+  }
+.card:hover{
+    top:-10px;
+}
+
+.carousel-inner
+{
+    padding-top:10px;
+
+}
+
+@media screen and (max-width: 767.5px){
+    #leftpart {
+      display: none;
+    }
+  }
+  
+@media screen and (max-width: 645px){
+    .below {
+      top:150px;
+    }
+  }

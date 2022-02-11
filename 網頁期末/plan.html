@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsao Ching's Web</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="webstyle.css">
+</head>
+<body id="my_plan">
+    
+   <nav class="nav navbar-inverse">
+       <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <div class="logo-image">
+                    <img src="./media//gorilla.jpg" class="img-fluid">
+                </div>
+            </a>
+            <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html" id="brand_name">NPNG.</a>
+            </div>
+                <ul class="nav navbar-nav " id="navbar_list">
+                    <li ><a href="index.html"><span></span>Home</a></li>
+                    <li><a href="./chest.html">Chest Workout</a></li>
+                    <li><a href="./back.html">Back Workout</a></li>
+                    <li><a href="./legs.html">Legs Workout</a></li>
+                    <li><a href="./biceps.html">Biceps & Triceps  </a></li>
+                    <li><a href="./shoulder.html">Shoulder</a></li>
+                    <li class="active"><a href="./plan.html">Workout Plan</a></li>
+                </ul>
+        </div>
+    </nav>
+<div class="fly_in">
+        <div class="row">
+            <div class="col-md-4" id="part1"><img src="./media/ronnie.jpg" id="ronnie"></div>
+            <div class="col-md-4" id="part2">
+                <form  action="https://www.google.com.tw/?gws_rd=ssl" id="my_form">
+                    <div class="form-group">
+                        <label for="sex">性別:</label>
+                        <select class="form-control" id="sex">
+                            <option value="" disabled selected>Sex</option>
+                            <option value="1">男</option>
+                            <option value="2">女</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">年齡:</label>
+                        <input type="number" class="form-control" id="age" placeholder="Age">
+                    </div>
+                    <div class="form-group">
+                        <label for="frequency">一週幾練:</label>
+                        <select class="form-control" id="frequency">
+                            <option value="" disabled selected>Frequency</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="my_button">Submit</button>
+                </form>
+                <h1 class="train_1">一週練三次</h1>
+                <div >
+                    <table border="1" class="train_1">
+                        <tr>
+                            <td>肌群\星期</td>
+                            <td>一</td>
+                            <td class="train">二:胸加二頭</td>
+                            <td>三</td>
+                            <td class="train">四:背加三頭</td>
+                            <td>五</td>
+                            <td class="train">六:腿加肩</td>
+                            <td>日</td>
+                        </tr>
+                        <tr>
+                            <td>大肌群</td>
+                            <td>休息日</td>
+                            <td class="train">啞鈴平板臥推:<br>8-12*5<br>啞鈴上斜臥推:<br>8-12*5<br>啞鈴平板夾胸:<br>10-15*5<br>cable夾下胸:<br>10-15*5</td>
+                            <td>休息日</td>
+                            <td class="train">槓鈴划船:<br>8-12*5<br>高位下拉:<br>8-12*5<br>坐姿划船:<br>10-15*5<br>cable下拉:<br>10-15*5</td>
+                            <td>休息日</td>
+                            <td class="train">器械腿推:<br>8-12*5<br>坐姿伸腿:<br>10-12*5<br>俯臥腿彎舉:<br>10-15*5</td>
+                            <td>休息日</td>
+                        </tr>
+                        <tr>
+                            <td>小肌群</td>
+                            <td>休息日</td>
+                            <td class="train">啞鈴二頭彎舉:<br>8-12*5<br>啞鈴錘式彎舉:<br>8-12*5<br>器械二頭彎舉:<br>10-15*5</td>
+                            <td>休息日</td>
+                            <td class="train">器械三頭屈伸:<br>8-12*5<br>cable三頭下壓:<br>8-12*5<br>cable過頂屈伸:<br>10-15*5</td>
+                            <td>休息日</td>
+                            <td class="train">器械肩推:<br>8-12*5<br>器械側平舉:<br>8-12*5<br>cable面拉:<br>10-15*5</td>
+                            <td>休息日</td>
+                        </tr>
+                    </table>
+            
+            
+                </div>
+            
+                <h1  class="train_2">一週練四次</h1>
+                <div>
+                    <table border="1" class="train_2">
+                        <tr>
+                            <td>肌群\星期</td>
+                            <td class="train">一:胸加二頭</td>
+                            <td class="train">二:背加肩</td>
+                            <td>三</td>
+                            <td class="train">四:腿加三頭</td>
+                            <td class="train">五:弱項加強</td>
+                            <td>六</td>
+                            <td>日</td>
+                        </tr>
+                        <tr>
+                            <td>大肌群</td>
+                            <td class="train">啞鈴平板臥推:<br>8-12*5<br>啞鈴上斜臥推:<br>8-12*5<br>啞鈴平板夾胸:<br>10-15*5<br>cable夾下胸:<br>10-15*5</td>
+                            <td class="train">槓鈴划船:<br>8-12*5<br>高位下拉:<br>8-12*5<br>坐姿划船:<br>10-15*5<br>cable下拉:<br>10-15*5</td>
+                            <td>休息日</td>
+                            <td class="train">器械腿推:<br>8-12*5<br>坐姿伸腿:<br>10-12*5<br>俯臥腿彎舉:<br>10-15*5</td>
+                            <td class="train">啞鈴平板臥推:<br>8-12*5<br>啞鈴上斜臥推:<br>8-12*5<br>槓鈴划船:<br>8-12*5<br>高位下拉:<br>8-12*5</td>
+                            <td>休息日</td>
+                            <td>休息日</td>
+                        </tr>
+                        <tr>
+                            <td>小肌群</td>
+                            <td class="train">啞鈴二頭彎舉:<br>8-12*5<br>啞鈴錘式彎舉:<br>8-12*5<br>器械二頭彎舉:<br>10-15*5</td>
+                            <td class="train">器械肩推:<br>8-12*5<br>器械側平舉:<br>8-12*5<br>cable面拉:<br>10-15*5</td>
+                            <td>休息日</td>
+                            <td class="train">器械三頭屈伸:<br>8-12*5<br>cable三頭下壓:<br>8-12*5<br>cable過頂屈伸:<br>10-15*5</td>
+                            <td class="train">啞鈴二頭彎舉:<br>8-12*7<br>器械肩推:<br>8-12*8</td>
+                            <td>休息日</td>
+                            <td>休息日</td>
+                        </tr>
+                    </table>
+                    <br>
+            
+                </div>
+
+
+
+                
+            </div>
+            <div class="col-md-4" id="part3"> <img src="./media/phil.jpg" id="phil"></div>    
+
+        </div>
+
+    <div id="display">
+
+    </div>
+
+</div>
+
+    <script>
+
+        function table_color(){
+            $('.train').css({"background":"orange"});
+
+        }
+        table_color();
+        $('.train_1').hide();
+        $('.train_2').hide();
+        $("#my_form").submit(function(e) {
+            e.preventDefault();
+        }); 
+        $('#my_button').click(function(){
+            if($('#sex').val()!=0&&$('#age').val()&&$('#frequency').val()!=0)
+            {
+                if($('#age').val()<=0||$('#age').val()>130)
+                {
+                    alert("年齡有誤!!!");
+                    $('#age').val(" ");
+                }
+                else{
+                    if(($('#frequency').val()==3))
+                    {
+                        $('#part1').removeClass('col-md-4');
+                        $('#part1').addClass('col-md-3');
+                        $('#part2').removeClass('col-md-4');
+                        $('#part2').addClass('col-md-6');
+                        $('#part3').removeClass('col-md-4');
+                        $('#part3').addClass('col-md-3');
+                        if($('.train_2').show())
+                        {
+                            $('.train_2').hide();
+                        }
+                        $('.train_1').show();
+                        
+                    }
+                    else if(($('#frequency').val()==4))
+                    {
+                        $('#part1').removeClass('col-md-4');
+                        $('#part1').addClass('col-md-3');
+                        $('#part2').removeClass('col-md-4');
+                        $('#part2').addClass('col-md-6');
+                        $('#part3').removeClass('col-md-4');
+                        $('#part3').addClass('col-md-3');
+                        if($('.train_1').show())
+                        {
+                            $('.train_1').hide();
+                        }
+                        $('.train_2').show();
+                    }
+                }
+            }
+            else{
+                alert('資料缺漏!!!');
+            }
+
+        })
+
+    </script>
+</body>
+</html>
