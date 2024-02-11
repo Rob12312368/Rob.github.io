@@ -6,4 +6,4 @@ Due to some deployment problem, you may not see my demonstration video of my Uni
 Also, you may not see my machine learning project video. Please visit [Arkanoid auto pass project](https://www.youtube.com/watch?v=finxMD5Q1NY).
 
 # 2024/1/1
-I have created [my new webpage](https://tsaoching.work), and will keep updating that one. This website contains some previous work, and please take a look if interested.
+I have created [my new webpage](https://tsaoching.work), and will keep updating that one. This website contains some of my previous work. Please take a look if interested.
